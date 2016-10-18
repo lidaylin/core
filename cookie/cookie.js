@@ -11,10 +11,10 @@ var Cookie = {
 		if(opt) {
 			if(opt.duration) {
 				var now = new Date;
-				now.setTime(now.getTime() + opt.detation * 86400000);
+				now.setTime(now.getTime() + opt.deration * 86400000);
 				cookie += ';expires=' + now.toGMTString();
 			};
-			cookie += [";",opt.path ? "path=" + opt.path : "", ";", opt.domain ? "domain=" + opt.domain : "", ";", opt.secure ? "secure=" + opt.secure : "", ";"].join();
+			cookie += [";",opt.path ? "path=" + opt.path : "", ";", opt.domain ? "domain=" + opt.domain : "", ";", opt.secure ? "secure=" + opt.secure : "", ";"].join("");
 		}
 		document.cookie = cookie;
 	},
